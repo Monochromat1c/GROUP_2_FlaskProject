@@ -22,7 +22,7 @@ A web-based To-Do List application that helps users manage and prioritize tasks 
 ## Technologies Used
 - **Backend:** Flask (Python)
 - **Database:** SQLite
-- **Frontend:** Tailwind CSS
+- **Frontend:** HTML, Tailwind CSS
 
 ## Roles & Contributors
 | **Role**                    | **Name**                     | **Responsibilities** |
