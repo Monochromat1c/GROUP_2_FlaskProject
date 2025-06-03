@@ -6,9 +6,7 @@ A web-based To-Do List application that helps users manage and prioritize tasks 
 ## Features
 - Task creation, editing, and deletion
 - Priority levels (High, Medium, Low)
-- Due dates and automated reminders
-- User authentication for personal task management
-- Responsive UI with Bootstrap and animations
+- Responsive UI using Tailwind CSS
 
 ## Installation
 
@@ -22,10 +20,9 @@ A web-based To-Do List application that helps users manage and prioritize tasks 
 
 
 ## Technologies Used
-- **Backend:** Flask/Django (Python)
-- **Database:** SQLite/PostgreSQL
+- **Backend:** Flask (Python)
+- **Database:** SQLite
 - **Frontend:** Tailwind CSS
-- **Authentication:** Secure user login system
 
 ## Roles & Contributors
 | **Role**                    | **Name**                     | **Responsibilities** |
