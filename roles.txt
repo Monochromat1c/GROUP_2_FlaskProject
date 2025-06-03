@@ -1,0 +1,42 @@
+# Roles & Contributions
+
+## PROJECT LEADER - Angela Arguelles
+
+Project Coordinator & UI Specialist
+
+- Oversees project timeline, ensuring deadlines are met
+- Leads team discussions and keeps members focused
+- Designs and enhances the responsive user interface
+- Implements front-end functionalities
+
+## PROGRAMMER - Charles Manuel Diestro
+
+Front-End Developer & Backend Developer
+
+- Writes and optimizes Flask and HTML code
+- Develops user authentication system for secure access
+- Manages API integration for reminders and notifications
+
+## SYSTEM ANALYST - Ian Gabriel Dichosa
+
+Workflow Designer
+
+- Plans system logic and workflow architecture
+- Designs flowcharts to streamline application processes
+- Defines key app features and functionality requirements
+
+## TESTER - Eliza Jane Hingco
+
+Quality Assurance Specialist & Documentation Reviewer
+
+- Conducts feature testing and identifies bugs
+- Documents feedback and suggests improvements
+- Reviews technical documentation for accuracy
+
+## DOCUMENTER - Charles Cayetano
+
+Technical Writer & Submission Coordinator
+
+- Organizes and prepares the submission folder
+- Writes README, documents features, and summarizes learnings
+- Ensures all documentation is complete and well-structured

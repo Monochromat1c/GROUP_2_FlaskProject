@@ -1,0 +1,62 @@
+# Test Report - To-Do List with Priorities
+
+## Overview
+This document outlines the test cases executed for the To-Do List system, categorized by team roles.
+
+## Test Cases
+
+### **UI & Front-End Functionality (Project Leader - Angela Arguelles)**
+1. **Responsive Design Testing**
+   - Expected: UI adapts smoothly to different screen sizes.
+   - Result: ✅ Pass
+
+2. **Task Creation Form Styling**
+   - Expected: Proper alignment and intuitive design for adding new tasks.
+   - Result: ✅ Pass
+
+---
+
+### **Backend Logic & Authentication (Programmer - Charles Manuel Diestro)**
+3. **User Authentication**
+   - Expected: Users can securely log in and manage personal tasks.
+   - Result: ✅ Pass
+
+4. **API Integration for Reminders**
+   - Expected: Notifications appear at the scheduled times.
+   - Result: ✅ Pass
+
+---
+
+### **System Flow & Feature Design (System Analyst - Ian Gabriel Dichosa)**
+5. **Task Prioritization Logic**
+   - Expected: Tasks are sorted correctly by priority levels (High, Medium, Low).
+   - Result: ✅ Pass
+
+6. **Task Filtering**
+   - Expected: Users can filter tasks by priority or due date.
+   - Result: ✅ Pass
+
+---
+
+### **Bug Testing & Quality Assurance (Tester - Eliza Jane Hingco)**
+7. **Task Deletion**
+   - Expected: Task successfully removed from the database.
+   - Result: ✅ Pass
+
+8. **Database Integrity Check**
+   - Expected: No data loss or corruption during task updates.
+   - Result: ✅ Pass
+
+9. **Error Handling**
+   - Expected: Application handles incorrect inputs gracefully.
+   - Result: ✅ Pass
+
+---
+
+### **Documentation Review (Documenter - Charles Cayetano)**
+10. **README & Submission Folder Verification**
+    - Expected: All necessary files are included and properly formatted.
+    - Result: ✅ Pass
+
+## Summary
+All major functionalities tested successfully. No critical issues found. Minor UI improvements noted for future iterations.
