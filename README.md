@@ -24,7 +24,7 @@ A web-based To-Do List application that helps users manage and prioritize tasks 
 ## Technologies Used
 - **Backend:** Flask/Django (Python)
 - **Database:** SQLite/PostgreSQL
-- **Frontend:** Bootstrap/CSS, JavaScript for interactivity
+- **Frontend:** Tailwind CSS
 - **Authentication:** Secure user login system
 
 ## Roles & Contributors
