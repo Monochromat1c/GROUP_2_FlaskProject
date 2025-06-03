@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit To-Do</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 p-4">
+    <div class="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl p-6">
+        <h1 class="text-3xl font-bold mb-6 text-center">Edit To-Do</h1>
+
+        <form action="{{ url_for('edit_todo', todo_id=todo.id) }}" method="POST" class="space-y-4">
+            <div>
+                <label for="task" class="block text-sm font-medium text-gray-700">Task:</label>
+                <input type="text" id="task" name="task" value="{{ todo.task }}" class="mt-1 block w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+            </div>
+            <div>
+                <label for="priority" class="block text-sm font-medium text-gray-700">Priority:</label>
+                <select id="priority" name="priority" class="mt-1 block w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    <option value="High" {% if todo.priority == 'High' %}selected{% endif %}>High</option>
+                    <option value="Medium" {% if todo.priority == 'Medium' %}selected{% endif %}>Medium</option>
+                    <option value="Low" {% if todo.priority == 'Low' %}selected{% endif %}>Low</option>
+                </select>
+            </div>
+            <div class="flex items-center">
+                <input type="checkbox" id="completed" name="completed" {% if todo.completed %}checked{% endif %} class="h-4 w-4 text-blue-600 focus:ring-blue-500 border-gray-300 rounded">
+                <label for="completed" class="ml-2 block text-sm text-gray-900">Completed</label>
+            </div>
+            <div class="flex justify-end space-x-2">
+                <button type="submit" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-md flex items-center justify-center space-x-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M10 2a1 1 0 011 1v5.586l1.293-1.293a1 1 0 011.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 011.414-1.414L9 8.586V3a1 1 0 011-1z" clip-rule="evenodd"/>
+                        <path fill-rule="evenodd" d="M4 14a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 112 0v3a4 4 0 01-4 4H6a4 4 0 01-4-4v-3a1 1 0 112 0v3z" clip-rule="evenodd"/>
+                    </svg>
+                    <span>Update To-Do</span>
+                </button>
+                <a href="{{ url_for('index') }}" class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded-md flex items-center justify-center space-x-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"/>
+                    </svg>
+                    <span>Cancel</span>
+                </a>
+            </div>
+        </form>
+    </div>
+</body>
+</html> 
