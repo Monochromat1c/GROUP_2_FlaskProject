@@ -46,5 +46,3 @@ This project is open-source under the MIT License.
 
 ---
 
-This README provides a clear, structured overview of your project. Let me know if you’d like refinements or additional details! 🚀
-
