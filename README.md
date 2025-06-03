@@ -28,7 +28,7 @@ A web-based To-Do List application that helps users manage and prioritize tasks 
 | **Role**                    | **Name**                     | **Responsibilities** |
 |-----------------------------|------------------------------|----------------------|
 | Project Leader              | Angela Arguelles            | UI design, front-end improvements |
-| Programmer                  | Charles Manuel Diestro      | Backend logic, authentication system |
+| Programmer                  | Charles Manuel Diestro      | Backend logic |
 | System Analyst              | Ian Gabriel Dichosa         | Feature planning, workflow design |
 | Tester                      | Eliza Jane Hingco           | Bug testing, documentation review |
 | Documenter                  | Charles Cayetano            | README writing, submission folder management |
