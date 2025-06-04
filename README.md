@@ -6,9 +6,7 @@ A web-based To-Do List application that helps users manage and prioritize tasks 
 ## Features
 - Task creation, editing, and deletion
 - Priority levels (High, Medium, Low)
-- Due dates and automated reminders
-- User authentication for personal task management
-- Responsive UI with Bootstrap and animations
+- Responsive UI using Tailwind CSS
 
 ## Installation
 
@@ -22,16 +20,15 @@ A web-based To-Do List application that helps users manage and prioritize tasks 
 
 
 ## Technologies Used
-- **Backend:** Flask/Django (Python)
-- **Database:** SQLite/PostgreSQL
-- **Frontend:** Bootstrap/CSS, JavaScript for interactivity
-- **Authentication:** Secure user login system
+- **Backend:** Flask (Python)
+- **Database:** SQLite
+- **Frontend:** HTML, Tailwind CSS
 
 ## Roles & Contributors
 | **Role**                    | **Name**                     | **Responsibilities** |
 |-----------------------------|------------------------------|----------------------|
 | Project Leader              | Angela Arguelles            | UI design, front-end improvements |
-| Programmer                  | Charles Manuel Diestro      | Backend logic, authentication system |
+| Programmer                  | Charles Manuel Diestro      | Backend logic |
 | System Analyst              | Ian Gabriel Dichosa         | Feature planning, workflow design |
 | Tester                      | Eliza Jane Hingco           | Bug testing, documentation review |
 | Documenter                  | Charles Cayetano            | README writing, submission folder management |
@@ -45,6 +42,4 @@ A web-based To-Do List application that helps users manage and prioritize tasks 
 This project is open-source under the MIT License.
 
 ---
-
-This README provides a clear, structured overview of your project. Let me know if you’d like refinements or additional details! 🚀
 

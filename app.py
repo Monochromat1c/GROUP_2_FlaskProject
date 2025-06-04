@@ -1,5 +1,6 @@
 from flask import Flask, render_template, request, redirect, url_for
 import sqlite3
+from datetime import datetime, timedelta
 
 app = Flask(__name__)
 DATABASE = 'database.db'
@@ -17,7 +18,8 @@ def init_db():
                 id INTEGER PRIMARY KEY AUTOINCREMENT,
                 task TEXT NOT NULL,
                 priority TEXT NOT NULL,
-                completed BOOLEAN NOT NULL DEFAULT 0
+                completed BOOLEAN NOT NULL DEFAULT 0,
+                created_at DATETIME DEFAULT CURRENT_TIMESTAMP
             );
         ''')
         conn.commit()
@@ -33,12 +35,22 @@ def index():
     priority_filter = request.args.get('priority')
     
     if priority_filter and priority_filter != 'all':
-        todos = conn.execute('SELECT * FROM todos WHERE priority = ? ORDER BY id DESC', (priority_filter,)).fetchall()
+        if priority_filter == 'Completed':
+            todos = conn.execute('SELECT * FROM todos WHERE completed = 1 ORDER BY id DESC').fetchall()
+        else:
+            todos = conn.execute('SELECT * FROM todos WHERE priority = ? ORDER BY id DESC', (priority_filter,)).fetchall()
     else:
         todos = conn.execute('SELECT * FROM todos ORDER BY id DESC').fetchall()
     
+    completed_weekly = conn.execute('SELECT COUNT(*) FROM todos WHERE completed = 1 AND created_at >= date(CURRENT_DATE, "-7 days")').fetchone()[0]
+    completed_monthly = conn.execute('SELECT COUNT(*) FROM todos WHERE completed = 1 AND strftime("%Y-%m", created_at) = strftime("%Y-%m", CURRENT_DATE)').fetchone()[0]
+    completed_yearly = conn.execute('SELECT COUNT(*) FROM todos WHERE completed = 1 AND strftime("%Y", created_at) = strftime("%Y", CURRENT_DATE)').fetchone()[0]
+    
     conn.close()
-    return render_template('index.html', todos=todos, current_filter=priority_filter)
+    return render_template('index.html', todos=todos, current_filter=priority_filter,
+                           completed_weekly=completed_weekly,
+                           completed_monthly=completed_monthly,
+                           completed_yearly=completed_yearly)
 
 @app.route('/add', methods=['POST'])
 def add_todo():

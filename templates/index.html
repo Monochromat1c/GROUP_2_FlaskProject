@@ -10,6 +10,25 @@
     <div class="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl p-6">
         <h1 class="text-3xl font-bold mb-6 text-center">To-Do List</h1>
 
+        <!-- Completed Tasks Summary -->
+        <div class="mt-6 p-4 bg-blue-50 rounded-md shadow-sm mb-4">
+            <h2 class="text-xl font-bold mb-4 text-center">Completed Tasks Summary</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-center">
+                <div class="bg-white p-3 rounded-md shadow">
+                    <p class="text-gray-600 text-sm">Weekly</p>
+                    <p class="text-2xl font-bold text-blue-600">{{ completed_weekly }}</p>
+                </div>
+                <div class="bg-white p-3 rounded-md shadow">
+                    <p class="text-gray-600 text-sm">Monthly</p>
+                    <p class="text-2xl font-bold text-blue-600">{{ completed_monthly }}</p>
+                </div>
+                <div class="bg-white p-3 rounded-md shadow">
+                    <p class="text-gray-600 text-sm">Yearly</p>
+                    <p class="text-2xl font-bold text-blue-600">{{ completed_yearly }}</p>
+                </div>
+            </div>
+        </div>
+
         <!-- Filter Buttons -->
         <div class="mb-4 flex justify-center space-x-2">
             <a href="{{ url_for('index', priority='all') }}" class="px-4 py-2 rounded-md text-sm font-medium flex items-center space-x-1
@@ -39,6 +58,13 @@
                     <path fill-rule="evenodd" d="M3 3a1 1 0 011-1h12a1 1 0 011 1v12a1 1 0 01-1 1H4a1 1 0 01-1-1V3z" clip-rule="evenodd"/>
                 </svg>
                 <span>Low</span>
+            </a>
+            <a href="{{ url_for('index', priority='Completed') }}" class="px-4 py-2 rounded-md text-sm font-medium flex items-center space-x-1
+                {% if current_filter == 'Completed' %}bg-green-500 text-white{% else %}bg-gray-200 text-gray-700{% endif %}">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                </svg>
+                <span>Completed</span>
             </a>
         </div>
 
