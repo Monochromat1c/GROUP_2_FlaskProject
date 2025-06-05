@@ -1,42 +1,44 @@
 # Roles & Contributions
 
-## PROJECT LEADER - Angela Arguelles
+## PROJECT LEADER – Angela Arguelles  
+**Project Coordinator & UI Specialist**
 
-Project Coordinator & UI Specialist
+- Oversees the project timeline and ensures team progress
+- Facilitates team collaboration and task distribution
+- Reviews written documentation
 
-- Oversees project timeline, ensuring deadlines are met
-- Leads team discussions and keeps members focused
-- Designs and enhances the responsive user interface
-- Implements front-end functionalities
+---
 
-## PROGRAMMER - Charles Manuel Diestro
+## PROGRAMMER – Charles Manuel Diestro  
+**Front-End & Back-End Developer**
 
-Front-End Developer & Backend Developer
+- Develops and integrates Flask back-end logic for task handling
+- Implements SQLite database support for persistent task storage
+- Handles routing, task prioritization logic, and completion tracking
+- Assists in debugging and maintaining clean code structure
 
-- Writes and optimizes Flask and HTML code
-- Develops user authentication system for secure access
-- Manages API integration for reminders and notifications
+---
 
-## SYSTEM ANALYST - Ian Gabriel Dichosa
+## SYSTEM ANALYST – Ian Gabriel Dichosa  
+**Workflow Designer**
 
-Workflow Designer
+- Plans system behavior and defines application flow
+- Creates flowcharts and diagrams to visualize user interactions
+- Identifies feature requirements such as task filters and priority levels
 
-- Plans system logic and workflow architecture
-- Designs flowcharts to streamline application processes
-- Defines key app features and functionality requirements
+---
 
-## TESTER - Eliza Jane Hingco
+## TESTER – Eliza Jane Hingco  
+**Quality Assurance Specialist & Documentation Reviewer**
 
-Quality Assurance Specialist & Documentation Reviewer
+- Conducts manual testing of all system features and filters
+- Identifies usability issues and inconsistencies
 
-- Conducts feature testing and identifies bugs
-- Documents feedback and suggests improvements
-- Reviews technical documentation for accuracy
+---
 
-## DOCUMENTER - Charles Cayetano
+## DOCUMENTER – Charles Cayetano  
+**Technical Writer & Submission Coordinator**
 
-Technical Writer & Submission Coordinator
-
-- Organizes and prepares the submission folder
-- Writes README, documents features, and summarizes learnings
-- Ensures all documentation is complete and well-structured
+- Prepares and organizes documentation for final output
+- Writes the README file, summarizes system features and usage, and gathers reflection from group members
+- Ensures all deliverables are complete, structured, and submission-ready
