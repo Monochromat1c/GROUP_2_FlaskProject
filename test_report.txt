@@ -1,62 +1,78 @@
 # Test Report - To-Do List with Priorities
 
 ## Overview
-This document outlines the test cases executed for the To-Do List system, categorized by team roles.
+This document outlines the test cases executed for the To-Do List system. The tests cover UI, backend logic, database integration, and overall system flow, ensuring that all core features function correctly.
 
 ## Test Cases
 
-### **UI & Front-End Functionality (Project Leader - Angela Arguelles)**
+### **UI & Front-End Functionality**
 1. **Responsive Design Testing**
    - Expected: UI adapts smoothly to different screen sizes.
    - Result: ✅ Pass
 
 2. **Task Creation Form Styling**
-   - Expected: Proper alignment and intuitive design for adding new tasks.
+   - Expected: Form layout is clear, with labeled fields and responsive buttons.
+   - Result: ✅ Pass
+
+3. **Priority Indicators**
+   - Expected: Tasks visually reflect their priority (e.g., through color or tags).
    - Result: ✅ Pass
 
 ---
 
-### **Backend Logic & Authentication (Programmer - Charles Manuel Diestro)**
-3. **User Authentication**
-   - Expected: Users can securely log in and manage personal tasks.
+### **Backend Logic & State Handling**
+4. **Task Creation**
+   - Expected: New tasks are stored in the database and rendered immediately.
    - Result: ✅ Pass
 
-4. **API Integration for Reminders**
-   - Expected: Notifications appear at the scheduled times.
+5. **Task Completion Toggle**
+   - Expected: Marking a task as complete updates its status in the UI and database.
    - Result: ✅ Pass
 
----
-
-### **System Flow & Feature Design (System Analyst - Ian Gabriel Dichosa)**
-5. **Task Prioritization Logic**
-   - Expected: Tasks are sorted correctly by priority levels (High, Medium, Low).
+6. **Task Editing**
+   - Expected: Users can update task details and priority; changes persist in the database.
    - Result: ✅ Pass
 
-6. **Task Filtering**
-   - Expected: Users can filter tasks by priority or due date.
-   - Result: ✅ Pass
-
----
-
-### **Bug Testing & Quality Assurance (Tester - Eliza Jane Hingco)**
 7. **Task Deletion**
-   - Expected: Task successfully removed from the database.
-   - Result: ✅ Pass
-
-8. **Database Integrity Check**
-   - Expected: No data loss or corruption during task updates.
-   - Result: ✅ Pass
-
-9. **Error Handling**
-   - Expected: Application handles incorrect inputs gracefully.
+   - Expected: Tasks are removed from both the UI and the database.
    - Result: ✅ Pass
 
 ---
 
-### **Documentation Review (Documenter - Charles Cayetano)**
-10. **README & Submission Folder Verification**
-    - Expected: All necessary files are included and properly formatted.
+### **System Flow & Feature Behavior**
+8. **Priority-Based Filtering**
+   - Expected: Filtering shows only tasks of the selected priority level.
+   - Result: ✅ Pass
+
+9. **Completion Status Filtering**
+   - Expected: Filter displays only completed or pending tasks as selected.
+   - Result: ✅ Pass
+
+10. **Multiple Filters**
+    - Expected: Priority and status filters work together correctly.
+    - Result: ✅ Pass
+
+---
+
+### **Error Handling & Edge Cases**
+11. **Empty Task Submission**
+    - Expected: Application prevents creating empty or invalid tasks.
+    - Result: ✅ Pass
+
+12. **Simultaneous Edits**
+    - Expected: UI and database state stay consistent when editing tasks quickly.
+    - Result: ✅ Pass
+
+---
+
+### **Documentation Review**
+13. **README File**
+    - Expected: README clearly explains setup, usage, and features.
+    - Result: ✅ Pass
+
+14. **Code Organization**
+    - Expected: Code is clean, modular, and logically structured.
     - Result: ✅ Pass
 
 ## Summary
-All major functionalities tested successfully. No critical issues found. Minor UI improvements noted for future iterations.
+All tests passed successfully. The system behaves as expected with stable core features, persistent task handling via the database, and intuitive UI behavior. No critical bugs identified.
